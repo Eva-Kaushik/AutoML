@@ -126,12 +126,6 @@ It integrates many popular frameworks:
 - **With a large dataset, a lot of memory is required!**
 Library creates many new features. If you have a large dataset with a large number of features (more than 100), you may need a lot of memory.
 
-
-# Realtime Dashboard
-Works with [optuna-dashboard](https://github.com/optuna/optuna-dashboard)
-
-<img width=800 src="https://github.com/Alex-Lekov/AutoML_Alex/blob/develop/examples/img/dashboard.gif" alt="Dashboard">
-
 Run
 ```console
 $ optuna-dashboard sqlite:///db.sqlite3
