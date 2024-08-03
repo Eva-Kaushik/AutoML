@@ -1,6 +1,6 @@
 
 
-<h3 align="center">AutoML Alex</h3>
+<h3 align="center">AutoML</h3>
 
 <div align="center">
 
@@ -28,9 +28,6 @@
 ### Benchmark Results
 <img width=800 src="https://github.com/Alex-Lekov/AutoML-Benchmark/blob/master/img/Total_SUM.png" alt="bench">
 
-The bigger, the better   
-From [AutoML-Benchmark](https://github.com/Alex-Lekov/AutoML-Benchmark/) 
-
 ### Scheme
 <img width=800 src="https://github.com/Alex-Lekov/AutoML_Alex/blob/develop/examples/img/shema.png" alt="scheme">
 
@@ -51,17 +48,14 @@ From [AutoML-Benchmark](https://github.com/Alex-Lekov/AutoML-Benchmark/)
 # Installation
 
 ```python
-pip install automl-alex
+pip install automl
 ```
-
-# Docs
-[DocPage](https://alex-lekov.github.io/AutoML_Alex/)
 
 # 🚀 Examples
 
 Classifier:
 ```python
-from automl_alex import AutoMLClassifier
+from automl import AutoMLClassifier
 
 model = AutoMLClassifier()
 model.fit(X_train, y_train, timeout=600)
@@ -70,7 +64,7 @@ predicts = model.predict(X_test)
 
 Regression:
 ```python
-from automl_alex import AutoMLRegressor
+from automl import AutoMLRegressor
 
 model = AutoMLRegressor()
 model.fit(X_train, y_train, timeout=600)
@@ -79,7 +73,7 @@ predicts = model.predict(X_test)
 
 DataPrepare:
 ```python
-from automl_alex import DataPrepare
+from automl import DataPrepare
 
 de = DataPrepare()
 X_train = de.fit_transform(X_train)
@@ -88,7 +82,7 @@ X_test = de.transform(X_test)
 
 Simple Models Wrapper:
 ```python
-from automl_alex import LightGBMClassifier
+from automl import LightGBMClassifier
 
 model = LightGBMClassifier()
 model.fit(X_train, y_train)
@@ -99,18 +93,6 @@ model.opt(X_train, y_train,
     )
 predicts = model.predict_proba(X_test)
 ```
-
-More examples in the folder ./examples:
-
-- [01_Quick_Start.ipynb](https://github.com/Alex-Lekov/AutoML_Alex/blob/master/examples/01_Quick_Start.ipynb)  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Alex-Lekov/AutoML_Alex/blob/master/examples/01_Quick_Start.ipynb)
-- [02_Data_Cleaning_and_Encoding_(DataPrepare).ipynb](https://github.com/Alex-Lekov/AutoML_Alex/blob/master/examples/02_Data_Cleaning_and_Encoding_(DataPrepare).ipynb)  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Alex-Lekov/AutoML_Alex/blob/master/examples/02_Data_Cleaning_and_Encoding_(DataPrepare).ipynb)
-- [03_Models.ipynb](https://github.com/Alex-Lekov/AutoML_Alex/blob/master/examples/03_Models.ipynb)  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Alex-Lekov/AutoML_Alex/blob/master/examples/03_Models.ipynb)
-- [04_ModelsReview.ipynb](https://github.com/Alex-Lekov/AutoML_Alex/blob/master/examples/04_ModelsReview.ipynb)  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Alex-Lekov/AutoML_Alex/blob/master/examples/04_ModelsReview.ipynb)
-- [05_BestSingleModel.ipynb](https://github.com/Alex-Lekov/AutoML_Alex/blob/master/examples/05_BestSingleModel.ipynb)  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Alex-Lekov/AutoML_Alex/blob/master/examples/05_BestSingleModel.ipynb)
-- [Production Docker template](https://github.com/Alex-Lekov/AutoML_Alex/blob/master/examples/prod_sample)
-
-
-
 # What's inside
 
 It integrates many popular frameworks:
@@ -175,8 +157,5 @@ $ optuna-dashboard sqlite:///db.sqlite3
 
 -   [ ] Build pipelines
 
-
-# Contact
-
-[Telegram Group](https://t.me/automlalex)
+Contact: kaushikeva0026@gmail.com
 
